@@ -1,42 +1,40 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Learning HTML</title>
+    <title>HTML Forms</title>
   </head>
   <body>
-    <div>
-      <p>Hello, <strong>Hamisi</strong></p>
-      <p>My <small>First</small> Web <em>Page!</em></p>
-      <a href="https://www.google.com">Google Search Engine</a>
-      <a href="/about.html">About Us</a>
-    </div>
-    <div>
-      <h1>Heading 1</h1>
-      <h2>Heading 2</h2>
-      <h3>Heading 3</h3>
-      <h4>Heading 4</h4>
-      <h5>Heading 5</h5>
-      <h6>Heading 6</h6>
-    </div>
-    <div>
-      <ul>
-        <li>Hamisi</li>
-        <li>Victor</li>
-        <li>Anne</li>
-        <li>Catherine</li>
-      </ul>
-    </div>
+    <h1>HTML Forms</h1>
 
-    <span>I am a <br/> Span Tag</span>
+    <form>
+      <label for="username"> Enter the Username:</label>
+      <input type="text" id="username" name="username" />
+      <br /><br />
+      <label for="email"> Enter Email:</label>
+      <input type="email" id="email" name="email"/>
+      <br /><br />
+      <label for="password"> Password:</label>
+      <input type="password" id="password" name="password"/>
 
-    <hr>
+      <p>Select Your Age:</p>
+      <input type="radio" name="age" value="0-25" id="option-1">
+      <label for="option-1">0-25</label>
+      <input type="radio" name="age" value="26-50" id="option-2">
+      <label for="option-1">26-50</label>
+      <input type="radio" name="age" value="51+" id="option-3">
+      <label for="option-3">51+</label>
 
-    <img src="/Images/kunew6-3.png" alt="Kenyatta University Logo">
+      <br> <br>
+      <label for="question">Security Question:</label>
+      <select name="question" id="question">
+        <option value="q1">What are your favourite pair of Socks?</option>
+        <option value="q2">If you could be a vegetable, what would it be?</option>
+        <option value="q3">What is your best ever security question?  </option>
+      </select>
 
-    <blockquote cite="https://www.google.com">
-        We are all in the gutter, but some of us are looking at the sky
-    </blockquote>
-
-    <p style="color:orange">Style Me:</p>
+      <br><br>
+      <label for="answer">Security Question Answer</label>
+      <input type="text" name="answer" id="answer">
+    </form>
   </body>
 </html>
